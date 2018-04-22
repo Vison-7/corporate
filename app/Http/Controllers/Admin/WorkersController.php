@@ -9,7 +9,6 @@ use Corp\Repositories\DepartmentsRepository;
 use Corp\Repositories\PositionsRepository;
 use Corp\Worker;
 use Corp\Http\Requests\WorkerRequest;
-use Gate;
 
 class WorkersController extends AdminController
 {
