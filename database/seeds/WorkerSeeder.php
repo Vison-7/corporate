@@ -26,7 +26,7 @@ class WorkerSeeder extends Seeder
         
         /*посев должностей*/
         
-          /*
+         
         DB::table('workers')
                     ->where('id', '<=', $chief)
                     ->update(['position_id' => 1]);
@@ -46,7 +46,7 @@ class WorkerSeeder extends Seeder
          DB::table('workers')
                     ->whereBetween('id', [1+$chief+$dep_chief+$mng+$senior, 1+$chief+$dep_chief+$mng+$senior+$junior])
                     ->update(['position_id' => 5]);
-        */
+        
         // посев отделов
         
         $cnt = 50; //кол-во отделов
@@ -57,7 +57,7 @@ class WorkerSeeder extends Seeder
         $oneMng = 12;
         $oneSenior = 24;
         $oneJunior = 960;
-        /*
+       
         for($x = 1; $x <= $cnt; $x++){
             for($y = 1; $y <= 50; $y += $oneChief){
                 if($y != 1)
@@ -103,7 +103,7 @@ class WorkerSeeder extends Seeder
             }
         }
                 
-        */ 
+        
  
        //посев chief_id
       
