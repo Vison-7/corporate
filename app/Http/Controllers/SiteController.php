@@ -31,9 +31,9 @@ class SiteController extends Controller
         // МЕНЮ
         $menu = $this->getMenu();
         //dd($menu);
-        //render() передает вид одной строкой
+        
         $navigation = view(env('THEME').'.navigation')->with('menu', $menu) -> render();
-        //функция добавления элемента в массив
+  
         $this -> vars = array_add($this->vars, 'navigation', $navigation);
         
         //ТЕГИ HEAD

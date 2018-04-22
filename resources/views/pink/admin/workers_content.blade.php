@@ -65,7 +65,7 @@
 											{!! Form::open(['url' => route('workers.destroy', ['workers' => $worker -> id]), 'class' => 'form-horizontal', 'method' => 'post'])!!}
 											{{method_field('DELETE')}}
 											{!! Form::button('Удалить', ['class' => 'btn btn-french-5', 'type' => 'submit'])!!}
-											{!! Form::close() !!}
+                                            {!! Form::close() !!}
 										</td>
 									</tr>
 									@endforeach
@@ -89,16 +89,11 @@
                                      
                           
                     @endif
-             
-            
-                 
-   <!--если записей в разделе нет -->         
-   
+ 
     @endif
             </div>     
 	</div>
- @else
-        {!! Lang::get('ru.articles_no') !!}
+ 
     @endif
 </div>	
 				                    

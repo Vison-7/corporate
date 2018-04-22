@@ -25,11 +25,11 @@ class WorkerRequest extends FormRequest
     {
         return [
             //
-            'name' => 'required|max:255',
-            'position_id' => 'required|integer',
-            'department_id' => 'required|integer',
+            'name' => 'sometimes|required|max:255',
+            'position_id' => 'sometimes|required|integer',
+            'department_id' => 'sometimes|required|integer',
             'chief_id' => 'sometimes|required|integer',
-            'since_date' => 'required',
+            'since_date' => 'sometimes|required',
             'search' => 'sometimes|min:3'
         ];
        
